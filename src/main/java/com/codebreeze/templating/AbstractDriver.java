@@ -1,4 +1,4 @@
-package com.codebreeze.handlebars;
+package com.codebreeze.templating;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
