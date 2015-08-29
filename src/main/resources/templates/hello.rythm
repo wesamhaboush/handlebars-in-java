@@ -1,0 +1,21 @@
+@import com.codebreeze.templating.model.User
+@import java.util.List
+@args List<User> users
+<script id="some-id" type="text/x-handlebars-template">
+    <table>
+        <thead>
+        <th>Username</th>
+        <th>Real Name</th>
+        <th>Email</th>
+        </thead>
+        <tbody>
+        @for(User user : users) {
+        <tr>
+            <td>@user.getUsername()</td>
+            <td>@user.getFirstName() @user.getLastName()</td>
+            <td>@user.getEmail()</td>
+        </tr>
+        }
+        </tbody>
+    </table>
+</script>

@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.codebreeze.handlebars</groupId>
-    <artifactId>handlebars-sample-code</artifactId>
+    <artifactId>templating-engines-sample-code</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>handlebars sample code</name>
+    <name>templating engines sample code</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -103,12 +103,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.thymeleaf</groupId>
-            <artifactId>thymeleaf</artifactId>
-            <version>2.1.4.RELEASE</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.github.spullara.mustache.java</groupId>
             <artifactId>compiler</artifactId>
             <version>0.9.1</version>
@@ -118,6 +112,49 @@
             <groupId>com.samskivert</groupId>
             <artifactId>jmustache</artifactId>
             <version>1.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.x5dev</groupId>
+            <artifactId>chunk-templates</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mitchellbosecke</groupId>
+            <artifactId>pebble</artifactId>
+            <version>1.5.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.rythmengine</groupId>
+            <artifactId>rythm-engine</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.beetl</groupId>
+            <artifactId>beetl-core</artifactId>
+            <version>2.2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.httl</groupId>
+            <artifactId>httl</artifactId>
+            <version>1.0.11</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.floreysoft</groupId>
+            <artifactId>jmte</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>1.10.4</version>
         </dependency>
 
 
