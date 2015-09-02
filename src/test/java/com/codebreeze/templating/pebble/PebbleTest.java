@@ -1,12 +1,11 @@
 package com.codebreeze.templating.pebble;
 
 import com.codebreeze.templating.AbstractTemplateTest;
+import com.google.common.base.Throwables;
 import com.mitchellbosecke.pebble.PebbleEngine;
 import com.mitchellbosecke.pebble.error.PebbleException;
 import com.mitchellbosecke.pebble.template.PebbleTemplate;
-import org.apache.commons.io.IOUtils;
 import org.junit.Test;
-import org.stringtemplate.v4.ST;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -14,19 +13,28 @@ import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.google.common.io.Resources.getResource;
-
 public class PebbleTest extends AbstractTemplateTest{
+    private final static Map<String, Object> CONTEXT = new HashMap<String, Object>(){{
+        put("users", getUserWrapper().getUsers());
+    }};
+    private static final PebbleTemplate TEMPLATE = getTemplate();
 
     @Test
-    public void stringTemplateTest2() throws IOException, PebbleException {
-        PebbleEngine engine = new PebbleEngine();
-        PebbleTemplate compiledTemplate = engine.getTemplate("templates/hello.peb");
-        Writer writer = new StringWriter();
+    public void test() {
+        try {
+            final Writer writer = new StringWriter();
+            TEMPLATE.evaluate(writer, CONTEXT);
+            consume(writer.toString());
+        } catch (PebbleException | IOException e) {
+            throw Throwables.propagate(e);
+        }
+    }
 
-        Map<String, Object> context = new HashMap<>();
-        context.put("users", getUserWrapper().getUsers());
-        compiledTemplate.evaluate(writer, context);
-        System.out.println(writer.toString());
+    private static PebbleTemplate getTemplate() {
+        try {
+            return new PebbleEngine().getTemplate("templates/hello.peb");
+        } catch (PebbleException e) {
+            throw Throwables.propagate(e);
+        }
     }
 }

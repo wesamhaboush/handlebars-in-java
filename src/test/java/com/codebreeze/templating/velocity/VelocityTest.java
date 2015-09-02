@@ -11,17 +11,25 @@ import org.junit.Test;
 import java.io.StringWriter;
 
 public class VelocityTest extends AbstractTemplateTest{
+    private static final Template TEMPLATE = getTemplate();
+    private static final VelocityContext CONTEXT = new VelocityContext(){
+        {
+            put("users", getUserWrapper().getUsers());
+        }
+    };
+
     @Test
-    public void testTemplatingInVelocity(){
+    public void test(){
+        final StringWriter writer = new StringWriter();
+        TEMPLATE.merge(CONTEXT, writer);
+        consume( writer.toString() );
+    }
+
+    private static Template getTemplate(){
         Velocity.setProperty(RuntimeConstants.RESOURCE_LOADER, "classpath");
         Velocity.setProperty("classpath.resource.loader.class", ClasspathResourceLoader.class.getName());
         Velocity.init();
-        Template template = Velocity.getTemplate( "/templates/hello.vm" );
-        VelocityContext context = new VelocityContext();
-        context.put("users", getUserWrapper().getUsers());
-        final StringWriter writer = new StringWriter();
-        template.merge(context, writer);
-        System.out.println( writer.toString() );
+        return Velocity.getTemplate( "/templates/hello.vm" );
     }
 
 }

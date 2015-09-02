@@ -1,0 +1,711 @@
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.beetl
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 34440]
+# Run progress: 0.00% complete, ETA 00:06:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 141222.470 ops/s
+# Warmup Iteration   2: 181117.292 ops/s
+# Warmup Iteration   3: 196813.337 ops/s
+# Warmup Iteration   4: 196468.952 ops/s
+# Warmup Iteration   5: 196777.948 ops/s
+Iteration   1: 197122.395 ops/s
+Iteration   2: 197121.606 ops/s
+Iteration   3: 194934.058 ops/s
+Iteration   4: 198913.623 ops/s
+Iteration   5: 200207.632 ops/s
+
+# Run progress: 2.78% complete, ETA 00:07:23
+# Fork: 2 of 3
+# Warmup Iteration   1: 114996.618 ops/s
+# Warmup Iteration   2: 171233.070 ops/s
+# Warmup Iteration   3: 197038.110 ops/s
+# Warmup Iteration   4: 201132.361 ops/s
+# Warmup Iteration   5: 199831.873 ops/s
+Iteration   1: 183462.491 ops/s
+Iteration   2: 198368.639 ops/s
+Iteration   3: 200304.181 ops/s
+Iteration   4: 195253.776 ops/s
+Iteration   5: 196034.428 ops/s
+
+# Run progress: 5.56% complete, ETA 00:07:09
+# Fork: 3 of 3
+# Warmup Iteration   1: 117828.462 ops/s
+# Warmup Iteration   2: 177785.331 ops/s
+# Warmup Iteration   3: 191413.761 ops/s
+# Warmup Iteration   4: 145247.034 ops/s
+# Warmup Iteration   5: 189392.502 ops/s
+Iteration   1: 192141.486 ops/s
+Iteration   2: 198311.478 ops/s
+Iteration   3: 188067.510 ops/s
+Iteration   4: 192880.807 ops/s
+Iteration   5: 198485.122 ops/s
+
+
+Result "beetl":
+  195440.616 ±(99.9%) 4998.832 ops/s [Average]
+  (min, avg, max) = (183462.491, 195440.616, 200304.181), stdev = 4675.910
+  CI (99.9%): [190441.784, 200439.447] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.chunk
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 39487]
+# Run progress: 8.33% complete, ETA 00:06:56
+# Fork: 1 of 3
+# Warmup Iteration   1: 1327.029 ops/s
+# Warmup Iteration   2: 3487.845 ops/s
+# Warmup Iteration   3: 4562.302 ops/s
+# Warmup Iteration   4: 5224.909 ops/s
+# Warmup Iteration   5: 5407.995 ops/s
+Iteration   1: 5649.513 ops/s
+Iteration   2: 5681.383 ops/s
+Iteration   3: 6102.858 ops/s
+Iteration   4: 5641.892 ops/s
+Iteration   5: 3037.540 ops/s
+
+# Run progress: 11.11% complete, ETA 00:06:53
+# Fork: 2 of 3
+# Warmup Iteration   1: 1375.668 ops/s
+# Warmup Iteration   2: 4037.704 ops/s
+# Warmup Iteration   3: 5680.314 ops/s
+# Warmup Iteration   4: 5711.230 ops/s
+# Warmup Iteration   5: 6001.304 ops/s
+Iteration   1: 5992.180 ops/s
+Iteration   2: 5581.106 ops/s
+Iteration   3: 6416.272 ops/s
+Iteration   4: 5853.406 ops/s
+Iteration   5: 5032.215 ops/s
+
+# Run progress: 13.89% complete, ETA 00:06:42
+# Fork: 3 of 3
+# Warmup Iteration   1: 1008.449 ops/s
+# Warmup Iteration   2: 2018.108 ops/s
+# Warmup Iteration   3: 4252.877 ops/s
+# Warmup Iteration   4: 4270.417 ops/s
+# Warmup Iteration   5: 4179.440 ops/s
+Iteration   1: 4946.866 ops/s
+Iteration   2: 4899.780 ops/s
+Iteration   3: 4799.325 ops/s
+Iteration   4: 5169.918 ops/s
+Iteration   5: 4702.216 ops/s
+
+
+Result "chunk":
+  5300.431 ±(99.9%) 868.499 ops/s [Average]
+  (min, avg, max) = (3037.540, 5300.431, 6416.272), stdev = 812.395
+  CI (99.9%): [4431.932, 6168.931] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.freeMarker
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 54354]
+# Run progress: 16.67% complete, ETA 00:06:31
+# Fork: 1 of 3
+# Warmup Iteration   1: 33065.159 ops/s
+# Warmup Iteration   2: 111924.706 ops/s
+# Warmup Iteration   3: 144901.789 ops/s
+# Warmup Iteration   4: 159673.624 ops/s
+# Warmup Iteration   5: 160265.540 ops/s
+Iteration   1: 169015.550 ops/s
+Iteration   2: 169957.726 ops/s
+Iteration   3: 167558.931 ops/s
+Iteration   4: 169980.496 ops/s
+Iteration   5: 170520.388 ops/s
+
+# Run progress: 19.44% complete, ETA 00:06:19
+# Fork: 2 of 3
+# Warmup Iteration   1: 81971.206 ops/s
+# Warmup Iteration   2: 156189.745 ops/s
+# Warmup Iteration   3: 168099.485 ops/s
+# Warmup Iteration   4: 166496.522 ops/s
+# Warmup Iteration   5: 171702.134 ops/s
+Iteration   1: 168583.999 ops/s
+Iteration   2: 172942.781 ops/s
+Iteration   3: 174219.717 ops/s
+Iteration   4: 169691.428 ops/s
+Iteration   5: 171011.790 ops/s
+
+# Run progress: 22.22% complete, ETA 00:06:06
+# Fork: 3 of 3
+# Warmup Iteration   1: 58730.630 ops/s
+# Warmup Iteration   2: 152423.459 ops/s
+# Warmup Iteration   3: 162348.554 ops/s
+# Warmup Iteration   4: 173857.997 ops/s
+# Warmup Iteration   5: 174411.247 ops/s
+Iteration   1: 172693.492 ops/s
+Iteration   2: 174400.976 ops/s
+Iteration   3: 159812.967 ops/s
+Iteration   4: 168918.223 ops/s
+Iteration   5: 173064.968 ops/s
+
+
+Result "freeMarker":
+  170158.229 ±(99.9%) 3805.302 ops/s [Average]
+  (min, avg, max) = (159812.967, 170158.229, 174400.976), stdev = 3559.482
+  CI (99.9%): [166352.927, 173963.531] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.handlebars
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49891]
+# Run progress: 25.00% complete, ETA 00:05:52
+# Fork: 1 of 3
+# Warmup Iteration   1: 24873.711 ops/s
+# Warmup Iteration   2: 42197.175 ops/s
+# Warmup Iteration   3: 46113.907 ops/s
+# Warmup Iteration   4: 49617.379 ops/s
+# Warmup Iteration   5: 50528.138 ops/s
+Iteration   1: 50768.876 ops/s
+Iteration   2: 50998.792 ops/s
+Iteration   3: 49478.462 ops/s
+Iteration   4: 50145.536 ops/s
+Iteration   5: 50572.754 ops/s
+
+# Run progress: 27.78% complete, ETA 00:05:39
+# Fork: 2 of 3
+# Warmup Iteration   1: 17169.886 ops/s
+# Warmup Iteration   2: 38405.716 ops/s
+# Warmup Iteration   3: 47203.188 ops/s
+# Warmup Iteration   4: 49388.764 ops/s
+# Warmup Iteration   5: 49720.871 ops/s
+Iteration   1: 49761.944 ops/s
+Iteration   2: 49354.736 ops/s
+Iteration   3: 49691.258 ops/s
+Iteration   4: 49208.894 ops/s
+Iteration   5: 50141.537 ops/s
+
+# Run progress: 30.56% complete, ETA 00:05:26
+# Fork: 3 of 3
+# Warmup Iteration   1: 21647.111 ops/s
+# Warmup Iteration   2: 40153.923 ops/s
+# Warmup Iteration   3: 45544.929 ops/s
+# Warmup Iteration   4: 47738.340 ops/s
+# Warmup Iteration   5: 47276.036 ops/s
+Iteration   1: 46162.720 ops/s
+Iteration   2: 50939.190 ops/s
+Iteration   3: 50527.386 ops/s
+Iteration   4: 47600.198 ops/s
+Iteration   5: 48956.014 ops/s
+
+
+Result "handlebars":
+  49620.553 ±(99.9%) 1399.683 ops/s [Average]
+  (min, avg, max) = (46162.720, 49620.553, 50998.792), stdev = 1309.264
+  CI (99.9%): [48220.871, 51020.236] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.httl
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42040]
+# Run progress: 33.33% complete, ETA 00:05:13
+# Fork: 1 of 3
+# Warmup Iteration   1: 97628.964 ops/s
+# Warmup Iteration   2: 385959.101 ops/s
+# Warmup Iteration   3: 527044.973 ops/s
+# Warmup Iteration   4: 608792.796 ops/s
+# Warmup Iteration   5: 605978.956 ops/s
+Iteration   1: 592665.263 ops/s
+Iteration   2: 602405.223 ops/s
+Iteration   3: 603506.735 ops/s
+Iteration   4: 607286.413 ops/s
+Iteration   5: 569386.786 ops/s
+
+# Run progress: 36.11% complete, ETA 00:05:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 159593.912 ops/s
+# Warmup Iteration   2: 452395.555 ops/s
+# Warmup Iteration   3: 547022.605 ops/s
+# Warmup Iteration   4: 590992.737 ops/s
+# Warmup Iteration   5: 595364.130 ops/s
+Iteration   1: 571724.867 ops/s
+Iteration   2: 568675.422 ops/s
+Iteration   3: 577944.280 ops/s
+Iteration   4: 594106.755 ops/s
+Iteration   5: 564712.546 ops/s
+
+# Run progress: 38.89% complete, ETA 00:04:47
+# Fork: 3 of 3
+# Warmup Iteration   1: 154232.857 ops/s
+# Warmup Iteration   2: 450527.376 ops/s
+# Warmup Iteration   3: 561696.061 ops/s
+# Warmup Iteration   4: 602497.462 ops/s
+# Warmup Iteration   5: 612406.572 ops/s
+Iteration   1: 606888.157 ops/s
+Iteration   2: 600075.181 ops/s
+Iteration   3: 601163.756 ops/s
+Iteration   4: 610690.248 ops/s
+Iteration   5: 612577.155 ops/s
+
+
+Result "httl":
+  592253.919 ±(99.9%) 18139.162 ops/s [Average]
+  (min, avg, max) = (564712.546, 592253.919, 612577.155), stdev = 16967.384
+  CI (99.9%): [574114.757, 610393.082] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.jmte
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 57350]
+# Run progress: 41.67% complete, ETA 00:04:34
+# Fork: 1 of 3
+# Warmup Iteration   1: 31269.184 ops/s
+# Warmup Iteration   2: 102592.593 ops/s
+# Warmup Iteration   3: 125438.010 ops/s
+# Warmup Iteration   4: 128856.696 ops/s
+# Warmup Iteration   5: 135014.409 ops/s
+Iteration   1: 136176.938 ops/s
+Iteration   2: 133346.734 ops/s
+Iteration   3: 134224.321 ops/s
+Iteration   4: 135997.581 ops/s
+Iteration   5: 132540.918 ops/s
+
+# Run progress: 44.44% complete, ETA 00:04:21
+# Fork: 2 of 3
+# Warmup Iteration   1: 40737.769 ops/s
+# Warmup Iteration   2: 108766.051 ops/s
+# Warmup Iteration   3: 126319.723 ops/s
+# Warmup Iteration   4: 133080.066 ops/s
+# Warmup Iteration   5: 127195.607 ops/s
+Iteration   1: 135850.105 ops/s
+Iteration   2: 135185.994 ops/s
+Iteration   3: 137276.477 ops/s
+Iteration   4: 137196.375 ops/s
+Iteration   5: 136551.865 ops/s
+
+# Run progress: 47.22% complete, ETA 00:04:08
+# Fork: 3 of 3
+# Warmup Iteration   1: 38442.423 ops/s
+# Warmup Iteration   2: 98810.475 ops/s
+# Warmup Iteration   3: 126211.688 ops/s
+# Warmup Iteration   4: 124776.463 ops/s
+# Warmup Iteration   5: 130846.358 ops/s
+Iteration   1: 131157.876 ops/s
+Iteration   2: 131726.913 ops/s
+Iteration   3: 134776.448 ops/s
+Iteration   4: 132324.277 ops/s
+Iteration   5: 132517.366 ops/s
+
+
+Result "jmte":
+  134456.679 ±(99.9%) 2201.226 ops/s [Average]
+  (min, avg, max) = (131157.876, 134456.679, 137276.477), stdev = 2059.028
+  CI (99.9%): [132255.453, 136657.905] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.jmustache
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 58389]
+# Run progress: 50.00% complete, ETA 00:03:55
+# Fork: 1 of 3
+# Warmup Iteration   1: 38269.575 ops/s
+# Warmup Iteration   2: 58960.515 ops/s
+# Warmup Iteration   3: 60798.560 ops/s
+# Warmup Iteration   4: 60328.956 ops/s
+# Warmup Iteration   5: 60680.687 ops/s
+Iteration   1: 61100.434 ops/s
+Iteration   2: 60305.773 ops/s
+Iteration   3: 60699.416 ops/s
+Iteration   4: 59968.061 ops/s
+Iteration   5: 59545.354 ops/s
+
+# Run progress: 52.78% complete, ETA 00:03:42
+# Fork: 2 of 3
+# Warmup Iteration   1: 34001.023 ops/s
+# Warmup Iteration   2: 55668.651 ops/s
+# Warmup Iteration   3: 57476.787 ops/s
+# Warmup Iteration   4: 59993.536 ops/s
+# Warmup Iteration   5: 59412.845 ops/s
+Iteration   1: 59730.792 ops/s
+Iteration   2: 60606.952 ops/s
+Iteration   3: 58960.610 ops/s
+Iteration   4: 61237.125 ops/s
+Iteration   5: 60408.791 ops/s
+
+# Run progress: 55.56% complete, ETA 00:03:29
+# Fork: 3 of 3
+# Warmup Iteration   1: 33813.545 ops/s
+# Warmup Iteration   2: 34002.911 ops/s
+# Warmup Iteration   3: 59234.869 ops/s
+# Warmup Iteration   4: 60731.172 ops/s
+# Warmup Iteration   5: 61352.255 ops/s
+Iteration   1: 61456.157 ops/s
+Iteration   2: 61401.226 ops/s
+Iteration   3: 61021.595 ops/s
+Iteration   4: 61289.078 ops/s
+Iteration   5: 61310.288 ops/s
+
+
+Result "jmustache":
+  60602.777 ±(99.9%) 821.961 ops/s [Average]
+  (min, avg, max) = (58960.610, 60602.777, 61456.157), stdev = 768.863
+  CI (99.9%): [59780.816, 61424.738] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.mustachejava
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 51626]
+# Run progress: 58.33% complete, ETA 00:03:16
+# Fork: 1 of 3
+# Warmup Iteration   1: 144155.921 ops/s
+# Warmup Iteration   2: 297926.754 ops/s
+# Warmup Iteration   3: 272166.786 ops/s
+# Warmup Iteration   4: 364695.537 ops/s
+# Warmup Iteration   5: 362310.890 ops/s
+Iteration   1: 363956.373 ops/s
+Iteration   2: 350005.437 ops/s
+Iteration   3: 342582.107 ops/s
+Iteration   4: 362524.571 ops/s
+Iteration   5: 358089.370 ops/s
+
+# Run progress: 61.11% complete, ETA 00:03:03
+# Fork: 2 of 3
+# Warmup Iteration   1: 212302.398 ops/s
+# Warmup Iteration   2: 323414.249 ops/s
+# Warmup Iteration   3: 353228.043 ops/s
+# Warmup Iteration   4: 325740.790 ops/s
+# Warmup Iteration   5: 360073.463 ops/s
+Iteration   1: 333047.664 ops/s
+Iteration   2: 363087.557 ops/s
+Iteration   3: 311983.219 ops/s
+Iteration   4: 303668.855 ops/s
+Iteration   5: 303340.076 ops/s
+
+# Run progress: 63.89% complete, ETA 00:02:50
+# Fork: 3 of 3
+# Warmup Iteration   1: 134281.953 ops/s
+# Warmup Iteration   2: 231806.695 ops/s
+# Warmup Iteration   3: 185022.463 ops/s
+# Warmup Iteration   4: 288314.779 ops/s
+# Warmup Iteration   5: 261830.470 ops/s
+Iteration   1: 345614.834 ops/s
+Iteration   2: 363587.514 ops/s
+Iteration   3: 367213.371 ops/s
+Iteration   4: 369993.485 ops/s
+Iteration   5: 366901.844 ops/s
+
+
+Result "mustachejava":
+  347039.752 ±(99.9%) 25159.275 ops/s [Average]
+  (min, avg, max) = (303340.076, 347039.752, 369993.485), stdev = 23534.002
+  CI (99.9%): [321880.477, 372199.027] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.pebble
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 60634]
+# Run progress: 66.67% complete, ETA 00:02:37
+# Fork: 1 of 3
+# Warmup Iteration   1: 78599.959 ops/s
+# Warmup Iteration   2: 155964.953 ops/s
+# Warmup Iteration   3: 191703.058 ops/s
+# Warmup Iteration   4: 205510.763 ops/s
+# Warmup Iteration   5: 205754.328 ops/s
+Iteration   1: 208874.922 ops/s
+Iteration   2: 209010.377 ops/s
+Iteration   3: 208565.124 ops/s
+Iteration   4: 204381.161 ops/s
+Iteration   5: 202595.032 ops/s
+
+# Run progress: 69.44% complete, ETA 00:02:24
+# Fork: 2 of 3
+# Warmup Iteration   1: 90075.625 ops/s
+# Warmup Iteration   2: 125822.587 ops/s
+# Warmup Iteration   3: 165523.818 ops/s
+# Warmup Iteration   4: 205435.368 ops/s
+# Warmup Iteration   5: 205966.395 ops/s
+Iteration   1: 203328.277 ops/s
+Iteration   2: 205929.619 ops/s
+Iteration   3: 204282.752 ops/s
+Iteration   4: 209710.695 ops/s
+Iteration   5: 205464.576 ops/s
+
+# Run progress: 72.22% complete, ETA 00:02:11
+# Fork: 3 of 3
+# Warmup Iteration   1: 83531.312 ops/s
+# Warmup Iteration   2: 188070.139 ops/s
+# Warmup Iteration   3: 203959.646 ops/s
+# Warmup Iteration   4: 206484.389 ops/s
+# Warmup Iteration   5: 206136.000 ops/s
+Iteration   1: 211062.738 ops/s
+Iteration   2: 208530.592 ops/s
+Iteration   3: 207703.023 ops/s
+Iteration   4: 210236.425 ops/s
+Iteration   5: 212500.772 ops/s
+
+
+Result "pebble":
+  207478.406 ±(99.9%) 3189.665 ops/s [Average]
+  (min, avg, max) = (202595.032, 207478.406, 212500.772), stdev = 2983.614
+  CI (99.9%): [204288.741, 210668.070] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.rythm
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 57692]
+# Run progress: 75.00% complete, ETA 00:01:57
+# Fork: 1 of 3
+# Warmup Iteration   1: 0.825 ops/s
+# Warmup Iteration   2: 26962.244 ops/s
+# Warmup Iteration   3: 63587.007 ops/s
+# Warmup Iteration   4: 212740.588 ops/s
+# Warmup Iteration   5: 254807.166 ops/s
+Iteration   1: 257716.738 ops/s
+Iteration   2: 252799.990 ops/s
+Iteration   3: 244515.698 ops/s
+Iteration   4: 253675.427 ops/s
+Iteration   5: 262291.128 ops/s
+
+# Run progress: 77.78% complete, ETA 00:01:44
+# Fork: 2 of 3
+# Warmup Iteration   1: 576.566 ops/s
+# Warmup Iteration   2: 55873.284 ops/s
+# Warmup Iteration   3: 121197.227 ops/s
+# Warmup Iteration   4: 188121.124 ops/s
+# Warmup Iteration   5: 248350.112 ops/s
+Iteration   1: 257337.448 ops/s
+Iteration   2: 256051.191 ops/s
+Iteration   3: 252338.652 ops/s
+Iteration   4: 251931.808 ops/s
+Iteration   5: 255170.476 ops/s
+
+# Run progress: 80.56% complete, ETA 00:01:31
+# Fork: 3 of 3
+# Warmup Iteration   1: 1192.326 ops/s
+# Warmup Iteration   2: 51869.543 ops/s
+# Warmup Iteration   3: 87976.562 ops/s
+# Warmup Iteration   4: 208172.572 ops/s
+# Warmup Iteration   5: 239738.168 ops/s
+Iteration   1: 230591.936 ops/s
+Iteration   2: 241745.429 ops/s
+Iteration   3: 238718.425 ops/s
+Iteration   4: 241365.289 ops/s
+Iteration   5: 238561.507 ops/s
+
+
+Result "rythm":
+  248987.409 ±(99.9%) 9691.452 ops/s [Average]
+  (min, avg, max) = (230591.936, 248987.409, 262291.128), stdev = 9065.391
+  CI (99.9%): [239295.957, 258678.862] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.stringTemplate
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 54782]
+# Run progress: 83.33% complete, ETA 00:01:18
+# Fork: 1 of 3
+# Warmup Iteration   1: 252.063 ops/s
+# Warmup Iteration   2: 207.288 ops/s
+# Warmup Iteration   3: 137.245 ops/s
+# Warmup Iteration   4: 122.157 ops/s
+# Warmup Iteration   5: 102.141 ops/s
+Iteration   1: 90.084 ops/s
+Iteration   2: 82.327 ops/s
+Iteration   3: 77.287 ops/s
+Iteration   4: 71.521 ops/s
+Iteration   5: 69.241 ops/s
+
+# Run progress: 86.11% complete, ETA 00:01:05
+# Fork: 2 of 3
+# Warmup Iteration   1: 275.570 ops/s
+# Warmup Iteration   2: 200.078 ops/s
+# Warmup Iteration   3: 120.547 ops/s
+# Warmup Iteration   4: 97.862 ops/s
+# Warmup Iteration   5: 100.367 ops/s
+Iteration   1: 93.802 ops/s
+Iteration   2: 85.588 ops/s
+Iteration   3: 75.942 ops/s
+Iteration   4: 71.444 ops/s
+Iteration   5: 68.768 ops/s
+
+# Run progress: 88.89% complete, ETA 00:00:52
+# Fork: 3 of 3
+# Warmup Iteration   1: 268.710 ops/s
+# Warmup Iteration   2: 202.914 ops/s
+# Warmup Iteration   3: 140.582 ops/s
+# Warmup Iteration   4: 100.701 ops/s
+# Warmup Iteration   5: 81.642 ops/s
+Iteration   1: 73.704 ops/s
+Iteration   2: 65.204 ops/s
+Iteration   3: 66.615 ops/s
+Iteration   4: 69.146 ops/s
+Iteration   5: 70.306 ops/s
+
+
+Result "stringTemplate":
+  75.398 ±(99.9%) 9.353 ops/s [Average]
+  (min, avg, max) = (65.204, 75.398, 93.802), stdev = 8.749
+  CI (99.9%): [66.046, 84.751] (assumes normal distribution)
+
+
+# JMH 1.10.4 (released 17 days ago)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Dperformance=true
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.codebreeze.templating.performance.TemplatingPerformanceTest.velocity
+
+Forking 3 times using command: [/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dperformance=true, -XX:CompileCommandFile=/tmp/jmh5938400055100064606compilecommand, -cp, target/templating-engines-samples.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 43800]
+# Run progress: 91.67% complete, ETA 00:00:39
+# Fork: 1 of 3
+# Warmup Iteration   1: 60376.491 ops/s
+# Warmup Iteration   2: 111699.225 ops/s
+# Warmup Iteration   3: 128886.175 ops/s
+# Warmup Iteration   4: 130495.094 ops/s
+# Warmup Iteration   5: 181837.113 ops/s
+Iteration   1: 197149.200 ops/s
+Iteration   2: 194966.560 ops/s
+Iteration   3: 188152.640 ops/s
+Iteration   4: 171689.251 ops/s
+Iteration   5: 195869.300 ops/s
+
+# Run progress: 94.44% complete, ETA 00:00:26
+# Fork: 2 of 3
+# Warmup Iteration   1: 26743.801 ops/s
+# Warmup Iteration   2: 91744.333 ops/s
+# Warmup Iteration   3: 167303.666 ops/s
+# Warmup Iteration   4: 181032.971 ops/s
+# Warmup Iteration   5: 188829.264 ops/s
+Iteration   1: 187940.545 ops/s
+Iteration   2: 176744.531 ops/s
+Iteration   3: 168230.676 ops/s
+Iteration   4: 190700.056 ops/s
+Iteration   5: 190749.410 ops/s
+
+# Run progress: 97.22% complete, ETA 00:00:13
+# Fork: 3 of 3
+# Warmup Iteration   1: 96549.453 ops/s
+# Warmup Iteration   2: 149245.397 ops/s
+# Warmup Iteration   3: 157453.752 ops/s
+# Warmup Iteration   4: 140439.778 ops/s
+# Warmup Iteration   5: 186657.075 ops/s
+Iteration   1: 183110.520 ops/s
+Iteration   2: 187998.689 ops/s
+Iteration   3: 196343.842 ops/s
+Iteration   4: 193931.824 ops/s
+Iteration   5: 195474.361 ops/s
+
+
+Result "velocity":
+  187936.760 ±(99.9%) 9802.745 ops/s [Average]
+  (min, avg, max) = (168230.676, 187936.760, 197149.200), stdev = 9169.494
+  CI (99.9%): [178134.015, 197739.506] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:07:51
+
+Benchmark                                  Mode  Cnt       Score       Error  Units
+TemplatingPerformanceTest.beetl           thrpt   15  195440.616 ±  4998.832  ops/s
+TemplatingPerformanceTest.chunk           thrpt   15    5300.431 ±   868.499  ops/s
+TemplatingPerformanceTest.freeMarker      thrpt   15  170158.229 ±  3805.302  ops/s
+TemplatingPerformanceTest.handlebars      thrpt   15   49620.553 ±  1399.683  ops/s
+TemplatingPerformanceTest.httl            thrpt   15  592253.919 ± 18139.162  ops/s
+TemplatingPerformanceTest.jmte            thrpt   15  134456.679 ±  2201.226  ops/s
+TemplatingPerformanceTest.jmustache       thrpt   15   60602.777 ±   821.961  ops/s
+TemplatingPerformanceTest.mustachejava    thrpt   15  347039.752 ± 25159.275  ops/s
+TemplatingPerformanceTest.pebble          thrpt   15  207478.406 ±  3189.665  ops/s
+TemplatingPerformanceTest.rythm           thrpt   15  248987.409 ±  9691.452  ops/s
+TemplatingPerformanceTest.stringTemplate  thrpt   15      75.398 ±     9.353  ops/s
+TemplatingPerformanceTest.velocity        thrpt   15  187936.760 ±  9802.745  ops/s

@@ -7,17 +7,20 @@ import com.github.mustachejava.MustacheFactory;
 import com.github.mustachejava.resolver.ClasspathResolver;
 import org.junit.Test;
 
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.io.StringWriter;
 
 public class MustacheJavaTest extends AbstractTemplateTest{
+    private static final Mustache TEMPLATE = getTemplate();
+
     @Test
-    public void testMustacheJava() throws IOException {
-        final MustacheFactory mf = new DefaultMustacheFactory(new ClasspathResolver());
-        final Mustache mustache = mf.compile("templates/hello.mustache");
+    public void test(){
         final StringWriter sw = new StringWriter();
-        mustache.execute(sw, getUserWrapper());
-        System.out.println(sw);
+        TEMPLATE.execute(sw, getUserWrapper());
+        consume(sw.toString());
+    }
+
+    private static Mustache getTemplate() {
+        final MustacheFactory mf = new DefaultMustacheFactory(new ClasspathResolver());
+        return mf.compile("templates/hello.mustache");
     }
 }

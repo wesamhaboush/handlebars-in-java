@@ -5,7 +5,7 @@
         <th>Real Name</th>
         <th>Email</th>
         </thead>
-        <tbody>
+    <tbody>
         {% loop in $users as $user %}
         <tr>
             <td>{$user.username}</td>
